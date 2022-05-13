@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class LoginUser extends JDialog {
     private JPanel contentPane;
@@ -11,8 +13,20 @@ public class LoginUser extends JDialog {
     private JButton buttonOK;
 
     public LoginUser() {
-        setContentPane(contentPane);
-        setModal(true);
-        getRootPane().setDefaultButton(buttonOK);
+        JFrame  frame = new JFrame();
+        frame.setContentPane(contentPane);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        frame.setResizable(false);
+        frame.setSize(500,500);
+        frame.setLocationRelativeTo(null);
+        frame.pack();
+
+
+    }
+
+    public static void main(String[] args) {
+        LoginUser dialog = new LoginUser();
+
     }
 }
