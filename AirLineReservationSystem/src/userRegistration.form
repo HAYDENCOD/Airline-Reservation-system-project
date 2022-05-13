@@ -24,7 +24,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="f8c98" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+              <component id="f8c98" class="javax.swing.JTextField" binding="firstnameText">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -32,7 +32,7 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="65260" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+              <component id="65260" class="javax.swing.JTextField" binding="emailtext">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -88,7 +88,7 @@
                   <text value="Last name"/>
                 </properties>
               </component>
-              <component id="2a3a6" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+              <component id="2a3a6" class="javax.swing.JTextField" binding="secnameText">
                 <constraints>
                   <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -96,7 +96,7 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="61d4a" class="javax.swing.JPasswordField" binding="passwordField2" default-binding="true">
+              <component id="61d4a" class="javax.swing.JPasswordField" binding="passText1">
                 <constraints>
                   <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -104,7 +104,7 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="3e44c" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+              <component id="3e44c" class="javax.swing.JTextField" binding="ageTxt">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -112,7 +112,7 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="56c62" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+              <component id="56c62" class="javax.swing.JTextField" binding="tellText">
                 <constraints>
                   <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -128,7 +128,7 @@
                   <text value="Confrm Pasword"/>
                 </properties>
               </component>
-              <component id="7f161" class="javax.swing.JTextField" binding="textField6" default-binding="true">
+              <component id="7f161" class="javax.swing.JTextField" binding="copassText">
                 <constraints>
                   <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -144,7 +144,7 @@
                   <text value="Mode of payment"/>
                 </properties>
               </component>
-              <component id="6a691" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+              <component id="6a691" class="javax.swing.JComboBox" binding="paymentChoice">
                 <constraints>
                   <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
