@@ -1,13 +1,12 @@
 import javax.swing.*;
-import java.awt.*;
-import java.awt.image.BufferedImage;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LoginUser extends JDialog {
     private JPanel contentPane;
     private JLabel login;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
+    private JTextField userName;
+    private JTextField emailText;
     private JButton signInButton;
     private JButton signUpButton;
     private JButton buttonOK;
@@ -21,6 +20,14 @@ public class LoginUser extends JDialog {
         frame.setSize(500,500);
         frame.setLocationRelativeTo(null);
         frame.pack();
+        signUpButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                userRegistration now = new userRegistration();
+                now.getClass();
+                frame.dispose();
+            }
+        });
 
 
     }
