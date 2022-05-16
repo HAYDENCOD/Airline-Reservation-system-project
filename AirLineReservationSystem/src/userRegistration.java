@@ -16,10 +16,11 @@ public class userRegistration extends JDialog {
     private JLabel email;
     private JLabel age;
     private JLabel password;
-    private JTextField copassText;
+    private JTextField confirmpassText;
     private JComboBox paymentChoice;
     private JButton signup;
     private JButton signInButton;
+    private JTextField UserName;
     private JButton buttonOK;
 
     public userRegistration() {
@@ -31,16 +32,27 @@ public class userRegistration extends JDialog {
         frame.setSize(500,500);
         frame.setLocationRelativeTo(null);
         frame.pack();
-        int keys = 0;
-        Map<Integer, user> map = new HashMap<>();
-        user person = new user(firstnameText.getText(),secnameText.getText(),tellText.getText(), emailtext.getText(),passText1.getPassword());
+
+
         signup.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               map.put(keys,person);
+              reservation now = new reservation();
+              now.getClass();
+              frame.dispose();
 
             }
         });
+        signInButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                LoginUser now = new LoginUser();
+                now.getClass(); frame.dispose();
+            }
+        });
+
+
+
     }
     static class user{
         String fName;
@@ -92,5 +104,6 @@ public class userRegistration extends JDialog {
 
     public static void main(String[] args) {
         userRegistration dialog = new userRegistration();
+
     }
 }
